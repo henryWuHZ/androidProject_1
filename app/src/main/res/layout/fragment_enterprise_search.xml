@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/a8"
+    tools:context="com.example.henry.myapplication1.EnterpriseSearch">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="按企业名称查找"
+            android:id="@+id/enterpriseSearch_searchByName"/>
+        <Button
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="按企业编码查找"
+            android:id="@+id/enterpriseSearch_searchByCode"/>
+        <Button
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="按采货类型查找"
+            android:id="@+id/enterpriseSearch_searchByType"/>
+        <Button
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="按备案时间查找"
+            android:id="@+id/enterpriseSearch_searchByDate"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/enterpriseSearch_fragment_content">
+    </RelativeLayout>
+
+
+</LinearLayout>

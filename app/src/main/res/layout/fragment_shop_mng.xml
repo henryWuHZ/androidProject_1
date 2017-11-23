@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.henry.myapplication1.ShopMng">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:text="按店铺名称查找："
+    android:textSize="25sp"/>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:id="@+id/shopMng_Linerar">
+
+        <SearchView
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:id="@+id/shopMng_sv"
+            android:background="@drawable/background_login">
+        </SearchView>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="查询"
+            android:id="@+id/shopMng_check"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="按备案企业查找："
+        android:textSize="25sp"
+        android:layout_below="@+id/shopMng_Linerar"
+        android:id="@+id/shopMng_textview2"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shopMng_lv"
+        android:layout_below="@+id/shopMng_textview2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="66dp">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/shopMng_Linerar2"
+        android:layout_below="@+id/shopMng_textview2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <SearchView
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:id="@+id/shopMng_sv2"
+            android:background="@drawable/background_login">
+        </SearchView>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="查询"
+            android:id="@+id/shopMng_check2"/>
+    </LinearLayout>
+
+    <Button
+        android:text="添加新店铺"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/background_button_div"
+        android:id="@+id/addNewShop" />
+
+</RelativeLayout>

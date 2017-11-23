@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">wms_yc</string>
+    <string name="title_activity_drawer__list">Drawer_ListActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="select">查询</string>
+    <string name="submit">提交</string>
+    <string name="action_settings">Settings</string>
+    <string name="shopName">店铺名称</string>
+    <string name="companyName">企业名称</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

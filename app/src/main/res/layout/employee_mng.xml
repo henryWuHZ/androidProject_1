@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:text="添加新员工"
+            android:id="@+id/employeeMng_btn_add"/>
+
+        <Button
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:text="查询员工信息"
+            android:id="@+id/employeeMng_btn_search"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/employeeMng_fragment_content">
+
+    </RelativeLayout>
+</LinearLayout>

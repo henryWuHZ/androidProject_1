@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="企业名称"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterpriseSearch_name"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="企业编码"
+        android:id="@+id/enterpriseSearch_code"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="采货类型"
+        android:id="@+id/enterpriseSearch_type"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="备案时间"
+        android:id="@+id/enterpriseSearch_date"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="自动配货"
+        android:id="@+id/enterpriseSearch_distribution_enable"
+        android:gravity="center"/>
+</LinearLayout>

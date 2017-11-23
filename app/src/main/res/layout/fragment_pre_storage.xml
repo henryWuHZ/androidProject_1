@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/a8"
+    tools:context="com.example.henry.myapplication1.PreStorage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备案企业:"/>
+        <com.example.henry.myapplication1.mycompnent.DropEditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/qq_edit_login"
+            android:id="@+id/preStorage_enterpriseName"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="入库起始时间:"
+            android:layout_gravity="center"/>
+        <com.example.henry.myapplication1.mycompnent.ClearEditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/qq_edit_login"
+            android:id="@+id/preStorage_startDate"/>
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="入库截止时间:"
+                    android:layout_gravity="center"
+                    android:id="@+id/preStorage_layout_endDate"/>
+                <com.example.henry.myapplication1.mycompnent.ClearEditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/qq_edit_login"
+                    android:id="@+id/preStorage_endDate" />
+            </LinearLayout>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button_div"
+                android:text="查询"
+                android:layout_gravity="end"
+                android:id="@+id/preStorage_btn"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/preStorage_lv">
+
+    </ListView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/a8"
+    tools:context="com.example.henry.myapplication1.OrderInquiry">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="选择查询方式"
+    android:textSize="40dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="按快递单号查询"/>
+        <com.example.henry.myapplication1.mycompnent.ClearEditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/qq_edit_login"
+            android:id="@+id/orderInquiry_expressNum"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button_div"
+            android:text="查询"
+            android:id="@+id/orderInquiry_btn_express"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="按订单号订单号"/>
+        <com.example.henry.myapplication1.mycompnent.ClearEditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/qq_edit_login"
+            android:id="@+id/orderInquiry_externalNum"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button_div"
+            android:text="查询"
+            android:id="@+id/orderInquiry_btn_external"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/orderInquiry_lv">
+
+    </ListView>
+</LinearLayout>

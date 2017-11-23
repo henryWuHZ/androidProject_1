@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="仓储">
+            <menu>
+                <item
+                    android:id="@+id/nav_camera"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="定仓" />
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="调仓" />
+            </menu>
+        </item>
+        <item android:title="查询">
+            <menu>
+                <item
+                    android:id="@+id/nav_enterpriseInfo"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="备案企业查询" />
+                <item
+                    android:title="订单查询"
+                    android:id="@+id/nav_orderInquiry"
+                    android:icon="@drawable/ic_menu_share"/>
+                <item
+                    android:title="预入库查询"
+                    android:icon="@drawable/ic_menu_share"
+                    android:id="@+id/nav_preStorage"/>
+            </menu>
+        </item>
+        <item android:title="企业管理">
+            <menu>
+                <item android:title="店铺信息管理"
+                    android:icon="@drawable/ic_menu_share"
+                    android:id="@+id/nav_shopMng"/>
+                <item android:title="员工信息管理"
+                    android:icon="@drawable/ic_menu_share"
+                    android:id="@+id/nav_employeeMng"/>
+                <item android:title="企业备案"
+                    android:icon="@drawable/ic_menu_share"
+                    android:id="@+id/nav_enterpriseRecord"/>
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="设置"
+        android:id="@+id/nav_test">
+        <menu>
+            <item android:id="@+id/nav_chgPsw"
+                android:icon="@drawable/ic_menu_send"
+                android:title="修改密码"/>
+            <item
+                android:id="@+id/nav_restart"
+                android:icon="@drawable/ic_menu_send"
+                android:title="重新登陆" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_send"
+                android:title="退出" />
+        </menu>
+    </item>
+
+</menu>
